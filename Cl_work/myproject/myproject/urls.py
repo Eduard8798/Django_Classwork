@@ -21,5 +21,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('mvc/', include('mvc.urls')),  # Подключение URL из приложения mvc
+    path('mvc/', include('mvc.urls')),
+    path('cars/', include('cars.urls')),
 ]
