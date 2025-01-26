@@ -4,21 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a23b3c71-57f0-40a2-8a31-747678e50561" name="Changes" comment="First">
-      <change afterPath="$PROJECT_DIR$/Cl_work/myproject/cars/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cl_work/myproject/cars/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_new_project/Feed/seriallizers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_new_project/Feed/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a23b3c71-57f0-40a2-8a31-747678e50561" name="Changes" comment="10.01.2024 classwork">
+      <change afterPath="$PROJECT_DIR$/my_homework_4/predictions/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_new_project/Notifications/seriallizers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_new_project/Notifications/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cl_work/myproject/mvc/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cl_work/myproject/mvc/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cl_work/myproject/myproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cl_work/myproject/myproject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cl_work/myproject/myproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cl_work/myproject/myproject/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,6 +41,9 @@
     &quot;accountId&quot;: &quot;68e99812-80c2-4da4-a79c-e86a58b58980&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -51,29 +52,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.main.executor": "Run",
-    "Python.manage.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "Shell Script.run server.executor": "Run",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "application.passwordSafe",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;Shell Script.run server.executor&quot;: &quot;Run&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ApiHomework4/my_tennis_club" />
+      <recent name="$PROJECT_DIR$/ApiHomework4" />
       <recent name="$PROJECT_DIR$/Cl_work/myproject" />
       <recent name="$PROJECT_DIR$/Cl_work" />
       <recent name="$PROJECT_DIR$/Classwork" />
@@ -196,6 +199,9 @@
       <workItem from="1736182937852" duration="8291000" />
       <workItem from="1736192960443" duration="4890000" />
       <workItem from="1736202246899" duration="19472000" />
+      <workItem from="1737117184793" duration="9556000" />
+      <workItem from="1737736181722" duration="23111000" />
+      <workItem from="1737847151388" duration="11358000" />
     </task>
     <task id="LOCAL-00001" summary="First">
       <option name="closed" value="true" />
@@ -205,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736193031361</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="10.01.2024 classwork">
+      <option name="closed" value="true" />
+      <created>1737678044228</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737678044229</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +238,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First" />
-    <option name="LAST_COMMIT_MESSAGE" value="First" />
+    <MESSAGE value="10.01.2024 classwork" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.01.2024 classwork" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
