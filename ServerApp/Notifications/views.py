@@ -1,28 +1,36 @@
 from django.shortcuts import get_object_or_404
 from django.http import JsonResponse
-from .seriallizers import NotificationSerializer
 from .models import Notification
+from .seriallizers import NotificationSerializer
 from django.views.decorators.http import require_http_methods
 import json
-from my_new_project.utils.helpers import Helpers
+from .helpers import Helpers
+from .utils.processing import Processing
 
 
-
-
+# Create your views here.
 @require_http_methods(["GET", "POST"])
 def all_notifications(request):
     if request.method == "GET":
-        notifications = list(Notification.objects.all().values())
-        return Helpers.success_response(notifications)
+        try:
+            notifications = list(Notification.objects.all().values())  # all data from the Notification table
+            processing_data = Processing(data=notifications, params=request.GET)
+            formatted_data = processing_data.process_data()
+            return Helpers.success_response(formatted_data['data'], warnings=formatted_data['warnings'])
+        except KeyError as e:
+            return Helpers.internal_server_error(f"This field does not exist in the Notification table: {str(e)}",
+                                                 status=400)
+        except Exception as e:
+            return Helpers.internal_server_error(str(e))
 
     elif request.method == "POST":
         data = json.loads(request.body)
-        notifications = Notification.objects.create(title=data["title"],content=data["content"])
-        return Helpers.success_response(notifications.__str__())
+        notification = Notification.objects.create(title=data['title'], content=data['content'])
+        return Helpers.success_created(notification.__str__())
 
 
 @require_http_methods(["GET", "PUT", "DELETE"])
-def notification_details(request,pk):
+def notification_detail(request, pk):
     try:
         if request.method == "GET":
             notification = get_object_or_404(Notification, pk=pk)
@@ -60,4 +68,4 @@ def notification_details(request,pk):
                 "message": "Notification successfully deleted!"
             }, status=200)
     except Exception as e:
-        return JsonResponse({"data": None,"meta":{} },status=500)
+        return JsonResponse({"data": None, "meta": {}}, status=500)
